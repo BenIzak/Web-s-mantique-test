@@ -13,7 +13,7 @@ import {
 import { useSession } from "@inrupt/solid-ui-react"
 import { RDF } from "@inrupt/vocab-common-rdf"
 
-const TASKS_URL = "http://localhost:3001/ben-tasks/todo/todolist";
+const TASKS_URL = "http://localhost:3000/ben-tasks/todo/todolist";
 
 const handleError = (error, customMessage) => {
   console.error(customMessage, error);

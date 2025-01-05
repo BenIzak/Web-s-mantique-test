@@ -16,7 +16,7 @@ const AuthButton = () => {
 
   console.log("Session Info:", session.info);
 
-  const datasetUrl = "http://localhost:3001/ben-tasks/profile/card";
+  const datasetUrl = "http://localhost:3000/ben-tasks/profile/card";
   const thingUrl = `${datasetUrl}#me`;
 
   return (
@@ -43,7 +43,7 @@ const AuthButton = () => {
       ) : (
         <span className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded cursor-pointer">
         <LoginButton
-          oidcIssuer="http://localhost:3001"
+          oidcIssuer="http://localhost:3000"
           redirectUrl={window.location.href}
           authOptions={authOptions}
         />
